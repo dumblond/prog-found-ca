@@ -23,7 +23,9 @@ if (outOfStock === true) {
 
 var numbers = [7, 18, 29, 40, 52];
 
-console.log(numbers);
+for (var i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
 
 // question 5
 
@@ -35,7 +37,7 @@ for (var i = 15; i <= 25; i++) {
 
 for (var i = 15; i <= 25; i++) {
     if (i === 20) {
-    console.log(i);
+        console.log(i);
     }
 }
 
@@ -47,7 +49,6 @@ var personArray = [
         age: 83,
         woman: false
     },
-
     {
         name: "Trine",
         age: 51,
@@ -81,11 +82,10 @@ subtractTwoNumbers(7, 2);
 
 var array = [];
 
-function oneArgument(test) {
-    array.push("number one");
-    console.log("This is test " + array);
+function addToArray(oneArgument) {
+    array.push(oneArgument);
 }
 
-oneArgument(array);
+addToArray(52);
 
 
